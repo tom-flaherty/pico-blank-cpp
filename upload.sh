@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/usr/env bash
 # Uploads the .uf2 to the pico
 
 UF2_PATH="./build/source/pico_w_project.uf2"

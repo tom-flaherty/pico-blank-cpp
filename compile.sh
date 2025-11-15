@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Build script for a pico or pico-w project
 
 # -DPICO_BOARD=pico_w builds for pico w, not pico
