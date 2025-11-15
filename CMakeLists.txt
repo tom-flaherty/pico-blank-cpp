@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.30)
 
 set(PROJECT_NAME pico_w_project)
 set(PICO_BOARD pico) # You may need to change this to pico_w
