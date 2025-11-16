@@ -14,13 +14,13 @@ upload_sucessful=false
 # Use picotool if available
 if which picotool >/dev/null; then
     # Flash the binary and reboot into application mode
-    picotool load $UF2_PATH && \
-    picotool reboot && \
+    echo "sudo picotool load $UF2_PATH"
+    sudo picotool load $UF2_PATH && \
+    sudo picotool reboot && \
     upload_sucessful=true
 else
-    echo picotool not found, attempting to use cp
-    cp $UF2_PATH /media/$USER/RPI-RP2/ &&
-    upload_sucessful=true
+    echo "Error: picotool is not installed"
+    exit 1
 fi
 
 echo upload_successful=$upload_sucessful
